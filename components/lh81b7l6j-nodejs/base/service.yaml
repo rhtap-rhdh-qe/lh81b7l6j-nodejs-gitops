@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lh81b7l6j-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lh81b7l6j-nodejs 
+  name: lh81b7l6j-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: lh81b7l6j-nodejs 
